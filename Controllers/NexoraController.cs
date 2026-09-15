@@ -8,10 +8,16 @@ namespace Nexora.Api.Controllers
     [ApiController]
     public class NexoraController : ControllerBase
     {
+        private readonly NexoraService _service;
+        public NexoraController(NexoraService service)
+        {
+            _service = service;
+        }
+
         [HttpGet]
         public string GetNexoraStatus()
         {
-            return "Nexora API is running.";
+            return _service.GetNexoraMessage();
         }
 
     }

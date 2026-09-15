@@ -1,0 +1,54 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa]rm/
+[Aa]rm64/
+
+# Visual Studio cache / generated files
+*.pdb
+*.cache
+*.nupkg
+*.snupkg
+TestResults/
+GeneratedFiles/
+
+# ASP.NET / .NET
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# NuGet
+packages/
+*.nuget.props
+*.nuget.targets
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Postman
+# Keep your Postman collections/environments if they are part of the project.
+# Ignore local Postman user/global files.
+postman/.cache/
+
+# Local environment / secrets
+.env
+.env.*
+!.env.example
+
+# ASP.NET local configuration
+appsettings.Local.json
