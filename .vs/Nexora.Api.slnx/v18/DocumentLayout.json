@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GitHub\\Nexora.Api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{48958FF7-25C6-C072-C24C-8D192011B24A}|Nexora.Api.csproj|d:\\github\\nexora.api\\controllers\\nexoracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48958FF7-25C6-C072-C24C-8D192011B24A}|Nexora.Api.csproj|solutionrelative:controllers\\nexoracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48958FF7-25C6-C072-C24C-8D192011B24A}|Nexora.Api.csproj|d:\\github\\nexora.api\\services\\nexoraservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48958FF7-25C6-C072-C24C-8D192011B24A}|Nexora.Api.csproj|solutionrelative:services\\nexoraservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48958FF7-25C6-C072-C24C-8D192011B24A}|Nexora.Api.csproj|d:\\github\\nexora.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48958FF7-25C6-C072-C24C-8D192011B24A}|Nexora.Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NexoraService.cs",
+              "DocumentMoniker": "D:\\GitHub\\Nexora.Api\\Services\\NexoraService.cs",
+              "RelativeDocumentMoniker": "Services\\NexoraService.cs",
+              "ToolTip": "D:\\GitHub\\Nexora.Api\\Services\\NexoraService.cs",
+              "RelativeToolTip": "Services\\NexoraService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-14T19:36:29.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NexoraController.cs",
+              "DocumentMoniker": "D:\\GitHub\\Nexora.Api\\Controllers\\NexoraController.cs",
+              "RelativeDocumentMoniker": "Controllers\\NexoraController.cs",
+              "ToolTip": "D:\\GitHub\\Nexora.Api\\Controllers\\NexoraController.cs",
+              "RelativeToolTip": "Controllers\\NexoraController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-14T18:11:48.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\GitHub\\Nexora.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\GitHub\\Nexora.Api\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-14T17:45:42.633Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
