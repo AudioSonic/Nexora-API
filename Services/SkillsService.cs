@@ -1,4 +1,6 @@
-﻿using Nexora.Api.Models;
+﻿using Microsoft.AspNetCore.Http.HttpResults;
+using Nexora.Api.Models;
+
 
 namespace Nexora.Api.Services
 {
@@ -33,6 +35,54 @@ namespace Nexora.Api.Services
             _skills.Add(skill);
 
             return skill;
+        }
+
+        public Skill UpdateSkill(int id, Skill skill)
+        {
+            Skill skillToChange = _skills.Find(skill => skill.Id == id);
+
+            if(skillToChange != null)
+            {
+                skillToChange.Name = skill.Name;
+                skillToChange.Description = skill.Description;
+                skillToChange.Logo = skill.Logo;
+                skillToChange.LogoAlt = skill.LogoAlt;
+
+                return skillToChange;
+            }
+
+            return null;
+        }
+
+        public Skill PatchSkill(int id, PatchSkillRequest skill)
+        {
+            Skill skillToPatch = _skills.Find(skill => skill.Id == id);
+
+            if(skillToPatch != null)
+            {
+                if (skill.Name != null) skillToPatch.Name = skill.Name;
+                if (skill.Description != null) skillToPatch.Description = skill.Description;
+                if (skill.Logo != null) skillToPatch.Logo = skill.Logo;
+                if (skill.LogoAlt != null) skillToPatch.LogoAlt = skill.LogoAlt;
+
+                return skillToPatch;
+            }
+
+            return null;
+        }
+
+        public Skill DeleteSkill(int id)
+        {
+            Skill skillToDelete = _skills.Find(skill => skill.Id == id);
+
+            if (skillToDelete != null)
+            {
+                _skills.Remove(skillToDelete);
+
+                return skillToDelete;
+            }
+
+            return null;
         }
     }
 }

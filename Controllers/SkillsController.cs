@@ -42,5 +42,42 @@ namespace Nexora.Api.Controllers
 
             return Created("", newSkill);
         }
+
+        [HttpPut("{id}")]
+        public ActionResult<Skill> UpdateSkill(int id, Skill skill)
+        {
+            Skill updatedSkill = _service.UpdateSkill(id, skill);
+
+            if(updatedSkill == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(updatedSkill);
+        }
+
+        [HttpPatch("{id}")]
+        public ActionResult<PatchSkillRequest> PatchSkill(int id, PatchSkillRequest skill)
+        {
+            Skill patchedSkill = _service.PatchSkill(id, skill);
+
+            if (patchedSkill == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(patchedSkill);
+        }
+
+        [HttpDelete("{id}")]
+        public ActionResult DeleteSkill(int id)
+        {
+            if (_service.DeleteSkill(id) == null)
+            {
+                return NotFound();
+            }
+
+            return NoContent();
+        }
     }
 }
