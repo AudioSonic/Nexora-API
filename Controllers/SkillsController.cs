@@ -10,6 +10,7 @@ namespace Nexora.Api.Controllers
     public class SkillsController : ControllerBase
     {
         private readonly SkillsService _service;
+
         public SkillsController(SkillsService service)
         {
             _service = service;
@@ -26,7 +27,7 @@ namespace Nexora.Api.Controllers
         {
             Skill skill = _service.GetSkill(id);
 
-            if(skill == null)
+            if (skill == null)
             {
                 return NotFound();
             }
