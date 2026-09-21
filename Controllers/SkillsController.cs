@@ -79,5 +79,17 @@ namespace Nexora.Api.Controllers
 
             return NoContent();
         }
+
+        [HttpGet("search")]
+        public ActionResult SearchSkills(string name)
+        {
+            Skill foundSkill = _service.GetSkillByName(name);
+            if (foundSkill == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(foundSkill);
+        }
     }
 }
