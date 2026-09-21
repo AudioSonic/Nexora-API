@@ -87,7 +87,7 @@ namespace Nexora.Api.Services
 
         public Skill GetSkillByName(string name)
         {
-                return _skills.Find(skill => skill.Name.ToLower() == name.ToLower());
+            return _skills.Find(skill => skill.Name.ToLower() == name.ToLower());
         }
     }
 }
